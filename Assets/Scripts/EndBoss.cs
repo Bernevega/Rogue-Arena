@@ -291,6 +291,6 @@ public class EndBoss : MonoBehaviour
     {
         Debug.Log("Boss Defeated!"); // Log when the boss dies
         Destroy(gameObject); // Destroy the boss object
-        // You could add a scene transition or a victory screen here.
+        SceneManager.LoadScene("Win Menu");
     }
 }
